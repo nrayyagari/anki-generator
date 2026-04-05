@@ -1,0 +1,14 @@
+[project]
+name = "anki-generator"
+version = "0.1.0"
+description = "Generate Anki cards from PDF documents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "pypdf",
+    "python-dotenv",
+]
+
+[project.scripts]
+anki-generator = "app:main"
