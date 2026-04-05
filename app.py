@@ -62,7 +62,7 @@ Return ONLY valid JSON array, no other text. Make questions clear and answers co
             capture_output=True,
             text=True,
             timeout=120,
-            env={**os.environ, "OPENCODE_MODEL": "anthropic/claude-sonnet-4-20250514"},
+            env={**os.environ, "OPENCODE_MODEL": "opencode/minimax-m2.5-free"},
         )
 
         output = result.stdout + result.stderr
